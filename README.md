@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Task Management Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is project is a task management web application to enhance productivity and organization. This tool will assist users in managing their tasks efficiently, allowing them to stay organized and maintain productivity throughout their projects and daily activities.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Task List**:
+- **Add Tasks**:
+- **Delete Tasks**:
+- **Edit Tasks**:
+- **Search Tasks**:
+- **Tasks Category**:
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **HTML**: Used for structuring the web pages.
+- **Tailwind CSS**: Utility-first CSS framework for styling the application.
+- **React**: Used for adding interactivity and managing contact data.
+- **Vite**:
+- **Typescript**:
+- **Local Storage**: The data of this website is stored on the browsers local storage.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Setup
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## License
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE.md) file for details.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Contact
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+If you have any questions or suggestions, please open an issue or contact me.
