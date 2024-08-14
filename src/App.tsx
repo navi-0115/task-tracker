@@ -1,19 +1,16 @@
-import "./App.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { DropdownMenu } from "@/components/ui/dropdown-menu";
-import { ModeToggle } from "./components/ModeToggle";
-import { Sidebar } from "./components/SideBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "@/pages/Home";
+import Sidebar from "@/components/SideBar";
 
-function App() {
+export default function App() {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <div>
-        <div>
-          <Sidebar />
-        </div>
+    <Router>
+      <div className="flex">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
-    </ThemeProvider>
+    </Router>
   );
 }
-
-export default App;

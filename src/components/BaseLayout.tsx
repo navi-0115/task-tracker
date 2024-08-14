@@ -1,16 +1,15 @@
-// import React from "react";
-// import { ThemeProvider } from "@/components/ThemeProvider";
-// import { DropdownMenu } from "@/components/ui/dropdown-menu";
+import { ReactNode } from "react";
+import Sidebar from "@/components/SideBar";
 
-// const BaseLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-//   return (
-//     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-//       <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col">
-//         <div className="flex-grow max-w-7xl w-full p-4 mx-auto">{children}</div>
-//         <DropdownMenu />
-//       </div>
-//     </ThemeProvider>
-//   );
-// };
+interface BaseLayoutProps {
+  children: ReactNode;
+}
 
-// export default BaseLayout;
+export default function BaseLayout({ children }: BaseLayoutProps) {
+  return (
+    <div className="flex min-h-screen">
+      <Sidebar />
+      <main className="flex-grow p-4">{children}</main>
+    </div>
+  );
+}
