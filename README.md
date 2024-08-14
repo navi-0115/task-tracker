@@ -16,10 +16,10 @@ This project is a task management web application designed to enhance productivi
 ## Tech Stack
 
 - **HTML**: Used for structuring the web pages.
-- **Tailwind CSS**: Utility-first CSS framework for styling the application.
+- **shadcn ui**: For styling the application.
 - **React**: Used for adding interactivity and managing task data.
 - **Vite**: Fast build tool for modern web projects.
-- **TypeScript**: Superset of JavaScript that adds static typing to the application.
+- **TypeScript**: Adds static typing to the application.
 - **Local Storage**: Data is stored on the browser's local storage for persistence.
 
 ## Project Setup
