@@ -10,7 +10,7 @@ interface Task {
   status: "Pending" | "In Progress" | "Completed";
 }
 
-const Home: React.FC = () => {
+export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
   // Get data from local storage
@@ -36,6 +36,4 @@ const Home: React.FC = () => {
       <TaskList tasks={tasks} />
     </div>
   );
-};
-
-export default Home;
+}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <aside className="w-72 bg-gray-100 p-6 border-r">
+    <div className="w-72 bg-gray-100 dark:bg-gray-800 p-6 border-r dark:border-gray-700">
       <div className="flex m-2">
         <h1 className="text-2xl font-bold mb-6 mr-4">Task Tracker</h1>
       </div>
@@ -17,6 +17,6 @@ export default function Sidebar() {
           Completed
         </Link>
       </nav>
-    </aside>
+    </div>
   );
 }
