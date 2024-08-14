@@ -6,11 +6,13 @@ import BaseLayout from "@/components/BaseLayout";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <BaseLayout>
-        <Home />
-      </BaseLayout>
-    ),
+    element: <BaseLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
   },
   {
     path: "/add-task",
