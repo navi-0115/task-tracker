@@ -31,8 +31,10 @@ export default function TaskForm() {
     storedTasks.push(newTask);
     localStorage.setItem("tasks", JSON.stringify(storedTasks));
 
+    // Incrementing ID
     setTaskId(taskId + 1);
 
+    // Navigating to "/" after add task
     navigate("/");
   };
 
