@@ -8,7 +8,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div>
-        <div className="flex-grow max-w-7xl w-full p-4 mx-auto">
+        <div>
           <Sidebar />
         </div>
       </div>
